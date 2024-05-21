@@ -6,6 +6,7 @@ export const router = createRouter({
         {
             path: '/auth',
             component: () => import('../pages/auth/index.vue'),
-        }
+            children: [],
+        },
     ],
 });

@@ -1,6 +1,6 @@
 <template>
     <div class="px-7 h-screen w-screen flex flex-col items-center justify-center">
-        <img src="@/assets/svg/login.svg" alt="login-picture">
+        <img class="h-64" src="@/assets/svg/login.svg" alt="login-picture">
         <h4 class="my-16 text-3xl">Log in</h4>
 
         <div class="mb-5 relative w-full flex flex-col">
@@ -44,7 +44,10 @@ const focusPhoneField = () => {
 }
 
 const inputPhoneField = () => {
-    if (phoneRegx.test(phoneFiled.value)) disabledLoginBtn.value = false;
+    if (phoneRegx.test(phoneFiled.value)) {
+        disabledLoginBtn.value = false;
+        phoneFieldFlag.value = false;
+    }
 }
 
 const focusoutPhoneField = () => {

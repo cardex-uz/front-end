@@ -5,7 +5,7 @@ export const router = createRouter({
     routes: [
         {
             path: '/auth',
-            component: () => import('../pages/auth/layout.vue'),
+            component: () => import('../layout/auth.vue'),
             children: [
                 {
                     path: '',
@@ -14,7 +14,7 @@ export const router = createRouter({
                 {
                     path: 'verify',
                     component: () => import('../pages/auth/verify.vue'),
-                }
+                },
             ]
         },
         {
@@ -36,7 +36,7 @@ export const router = createRouter({
                 {
                     path: 'profile',
                     component: () => import('../pages/profile/index.vue'),
-                }
+                },
             ],
         }
     ],

@@ -1,5 +1,5 @@
 <template>
-    <div class="relative h-screen w-full">
+    <div class="h-[100dvh] w-full pb-24">
         <router-view></router-view>
         <app-bottom-bar />
     </div>

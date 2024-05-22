@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+  font-size: calc(100vh * 0.018);
+  font-family: Comfortaa, sans-serif;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("/fonts/Comfortaa-VariableFont_wght.ttf");
+}  

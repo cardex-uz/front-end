@@ -1,7 +1,7 @@
 <template>
     <div class="px-7 pt-4 h-full w-full">
         <div class="my-5 flex justify-between h-11">
-            <drop-down />
+            <category-drop-down />
             <search class="w-48" />
             <app-filter />
         </div>
@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts" setup>
-import DropDown from '../../components/drop-down.vue';
+import CategoryDropDown from '../../components/category-drop-down.vue';
 import Search from '../../components/search.vue';
 import AppFilter from '../../components/app-filter.vue';
 import CardTemplate from '../../components/card-template.vue';
